@@ -626,6 +626,6 @@ footer h2{
     display: block; /* Obligatorio para que margin: auto funcione */
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-    height: 50%;
+  width: 100%;
+    height: 100%;
 }
