@@ -1,0 +1,624 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f4efe7;
+    color:#222;
+    font-family:'Playfair Display', serif;
+    overflow-x:hidden;
+
+}
+
+
+/* ==========================
+   INTRO
+========================== */
+
+#intro{
+
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.85)),
+    url("https://i.ibb.co/zVBtYHnP/Chat-GPT-Image-6-jul-2026-12-39-51-p-m.png");
+  
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.intro-box{
+
+    max-width:700px;
+    padding:40px;
+
+}
+
+.intro-box h3{
+
+    color:#e5d7b8;
+    font-size:28px;
+    margin-bottom:25px;
+    font-family:'Playfair Display', serif;
+
+}
+
+.intro-box h2{
+
+    color:white;
+    font-size:38px;
+    margin-bottom:15px;
+    font-family:'Cinzel', serif;
+
+}
+
+.intro-box h1{
+
+    color:#c62828;
+    font-size:70px;
+    letter-spacing:5px;
+    margin:35px 0;
+    font-family:'Bebas Neue', cursive;
+
+}
+
+#abrirBtn{
+
+    background:#b71c1c;
+    color:white;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.4s;
+
+}
+
+#abrirBtn:hover{
+
+    background:#811111;
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================
+   CONTENIDO
+========================== */
+
+#contenido{
+
+    display:none;
+
+}
+
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    width:100%;
+    background:black;
+
+}
+
+.hero img{
+
+    width:100%;
+    display:block;
+
+}
+
+
+/* ==========================
+   INFO
+========================== */
+
+.info{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:#f8f3ec;
+
+}
+
+.info h2{
+
+    font-size:55px;
+    color:#991b1b;
+    font-family:'Bebas Neue';
+
+    letter-spacing:3px;
+
+}
+
+.info h3{
+
+    font-size:35px;
+    margin-top:10px;
+
+    font-family:'Cinzel';
+
+}
+
+.frase{
+
+    max-width:700px;
+    margin:40px auto;
+
+    font-size:23px;
+
+    line-height:1.8;
+
+}
+
+.datos{
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+.dato{
+
+    width:250px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+    transition:.4s;
+
+}
+
+.dato:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.dato i{
+
+    font-size:45px;
+
+    color:#b71c1c;
+
+    margin-bottom:20px;
+
+}
+
+.dato h4{
+
+    margin-bottom:10px;
+
+    font-size:24px;
+
+}
+
+.dato p{
+
+    font-size:20px;
+
+}
+
+.dato span{
+
+    color:#666;
+
+}
+
+
+/* ==========================
+   CONTADOR
+========================== */
+
+.contador{
+
+    background:#8b1e1e;
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+.contador h2{
+
+    font-size:55px;
+
+    font-family:'Bebas Neue';
+
+}
+
+.contador p{
+
+    margin:20px 0 50px;
+
+    font-size:22px;
+
+}
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.countdown div{
+
+    background:white;
+
+    color:#222;
+
+    width:150px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+.countdown span{
+
+    font-size:60px;
+
+    display:block;
+
+    font-weight:bold;
+
+    color:#b71c1c;
+
+}
+
+.countdown small{
+
+    font-size:20px;
+
+}
+
+
+/* ==========================
+   MAPA
+========================== */
+
+.ubicacion{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:#f8f3ec;
+
+}
+
+.ubicacion h2{
+
+    font-size:50px;
+
+    color:#991b1b;
+
+    margin-bottom:20px;
+
+}
+
+.mapa{
+
+    margin:40px auto;
+
+    width:90%;
+
+    max-width:900px;
+
+    height:450px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.mapa iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#991b1b;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+.boton:hover{
+
+    background:black;
+
+}
+
+
+/* ==========================
+   REGALO
+========================== */
+
+.regalo{
+
+    background:#fffdf8;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+.regalo h2{
+
+    color:#991b1b;
+
+    font-size:48px;
+
+    margin-bottom:30px;
+
+}
+
+.regalo p{
+
+    max-width:700px;
+
+    margin:20px auto;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+.alias{
+
+    margin:50px auto;
+
+    display:inline-block;
+
+    padding:25px 50px;
+
+    border:3px dashed #991b1b;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    border-radius:20px;
+
+    color:#991b1b;
+
+    background:#fff;
+
+}
+
+.gracias{
+
+    margin-top:30px;
+
+    font-size:28px;
+
+}
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+footer h2{
+
+    font-size:60px;
+
+    color:#d32f2f;
+
+    margin-bottom:20px;
+
+}
+
+footer h3{
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+footer p{
+
+    font-size:22px;
+
+}
+
+
+/* ==========================
+   ANIMACIONES
+========================== */
+
+.fade{
+
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s;
+
+}
+
+.fade.visible{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.intro-box h1{
+
+    font-size:50px;
+
+}
+
+.intro-box h2{
+
+    font-size:28px;
+
+}
+
+.info h2{
+
+    font-size:40px;
+
+}
+
+.info h3{
+
+    font-size:28px;
+
+}
+
+.frase{
+
+    font-size:20px;
+
+}
+
+.dato{
+
+    width:100%;
+
+}
+
+.countdown{
+
+    gap:15px;
+
+}
+
+.countdown div{
+
+    width:130px;
+
+}
+
+.countdown span{
+
+    font-size:45px;
+
+}
+
+.alias{
+
+    width:90%;
+    font-size:28px;
+    padding:20px;
+
+}
+
+footer h2{
+
+    font-size:42px;
+
+}
+
+}
+#fotito{
+    width: 50%;
+    height: 50%;
+}
