@@ -623,7 +623,9 @@ footer h2{
     height: 50%;
 }
 #fotito2{
-    width: 50%;
+    display: block; /* Obligatorio para que margin: auto funcione */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
     height: 50%;
-   align-items: center;
 }
